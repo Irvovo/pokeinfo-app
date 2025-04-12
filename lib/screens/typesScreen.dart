@@ -46,32 +46,42 @@ class _TypesScreenState extends State <TypesScreen>{
         centerTitle: true,
     ),
     body: isLoading ? const Center(child: CircularProgressIndicator()): 
-    ListView.builder(
-      itemCount: types!.length,
-      padding: const EdgeInsets.all(16),
-      itemBuilder: (context, i){
-        final type = types![i];
-        return ExpansionTile(
-          title: Text(
+   ListView.builder(
+  itemCount: types!.length,
+  padding: const EdgeInsets.all(16),
+  itemBuilder: (context, i) {
+    final type = types![i];
+    return ExpansionTile(
+      title: Row(
+        children: [
+          // Ícone do tipo
+          Image.asset(
+            'assets/icons_type/${type.type}.png',  // Supondo que você tenha ícones no formato PNG
+            width: 24,
+            height: 24,
+          ),
+          const SizedBox(width: 8),  // Espaço entre o ícone e o texto
+          Text(
             type.type.toUpperCase(),
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),
           ),
-          children: [
-            Padding(
+        ],
+      ),
+      children: [
+       Padding(
               padding: const EdgeInsets.all(12),
               child: Text(
                 'Causa dano duplo em: ${type.typeDamage}',
                 style: const TextStyle(fontSize: 14),
               )
               )
-          ],
-          );
-
-      }
-      )
+      ],
+    );
+  },
+)
 
     );
   }

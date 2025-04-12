@@ -22,5 +22,6 @@ flutter:
   assets:
     -  assets/
     - assets/capa_jogos/
+    - assets/icons_type/
 
   
