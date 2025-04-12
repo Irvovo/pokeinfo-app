@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/infoScreen.dart';
 import 'package:flutter_application_1/screens/mainMenuScreen.dart';
 import 'package:flutter_application_1/screens/recoverPassword.dart';
 import 'package:flutter_application_1/screens/registerScreen.dart';
@@ -131,6 +132,20 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                   ],
+                ),
+              ),
+              const SizedBox(height: 8),
+              // Botão "Sobre"
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const InfoScreen()),
+                  );
+                },
+                child: const Text(
+                  'Sobre',
+                  style: TextStyle(decoration: TextDecoration.underline),
                 ),
               ),
             ],
