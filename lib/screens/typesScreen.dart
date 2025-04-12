@@ -56,11 +56,11 @@ class _TypesScreenState extends State <TypesScreen>{
         children: [
           // Ícone do tipo
           Image.asset(
-            'assets/icons_type/${type.type}.png',  // Supondo que você tenha ícones no formato PNG
+            'assets/icons_type/${type.type}.png',
             width: 24,
             height: 24,
           ),
-          const SizedBox(width: 8),  // Espaço entre o ícone e o texto
+          const SizedBox(width: 8),
           Text(
             type.type.toUpperCase(),
             style: const TextStyle(
