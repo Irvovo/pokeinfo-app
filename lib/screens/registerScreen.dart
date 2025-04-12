@@ -55,6 +55,17 @@ body: Container(
             )
           ),
         ),
+        const SizedBox(height: 16),
+        SizedBox(
+          width: 350,
+          child: TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: 'DIgite um número de telefone',
+              border: OutlineInputBorder()
+            )
+          ),
+        ),
           const SizedBox(height: 24,),
           // botao entrar
           SizedBox(
