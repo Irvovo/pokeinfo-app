@@ -59,7 +59,6 @@ body: Container(
         SizedBox(
           width: 350,
           child: TextField(
-            obscureText: true,
             decoration: InputDecoration(
               labelText: 'DIgite um número de telefone',
               border: OutlineInputBorder()
@@ -85,6 +84,17 @@ body: Container(
                             child: const Text('Ok'),
                           )
                         ],
+                      ),
+                    );
+                  } else {
+                    showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: const Text('Insira dados válidos'),
+                        content: Text('Seu email não é válido'),
+                        actions: [
+                          TextButton(onPressed: () => Navigator.pop(context), 
+                          child: const Text('Ok'))]
                       ),
                     );
                   }
