@@ -93119,7 +93119,7 @@ p.toString
 s=J.b8(p,b)
 p=s.a
 r=t.D
-return new A.pG(A.kA(A.a([A.Ay("assets/icons_type/"+p+".png",q,24,q),B.Hn,A.bo(p.toUpperCase(),q,q,q,q,B.ah_,q,q)],r),B.a7,B.ap,B.aH),A.a([new A.bn(B.NA,A.bo("Causa dano duplo em: "+A.m(s.b),q,q,q,q,B.aiJ,q,q),q)],r),q)},
+return new A.pG(A.kA(A.a([A.Ay("assets/icons_type/"+p+".png",q,24,24),B.Hn,A.bo(p.toUpperCase(),q,q,q,q,B.ah_,q,q)],r),B.a7,B.ap,B.aH),A.a([new A.bn(B.NA,A.bo("Causa dano duplo em: "+A.m(s.b),q,q,q,q,B.aiJ,q,q),q)],r),q)},
 $S:577}
 A.a7l.prototype={
 $1(a){return new A.nT(J.b8(a,"name"))},
