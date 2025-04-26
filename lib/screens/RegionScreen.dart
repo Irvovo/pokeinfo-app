@@ -67,7 +67,7 @@ class _RegionScreenState extends State <RegionScreen>{
         ),
         trailing: const Icon(Icons.chevron_right),
         onTap: () {
-          // ação ao tocar
+          
         },
       ),
     );

@@ -7,10 +7,9 @@ class TypesScreen extends StatefulWidget {
   const TypesScreen({super.key});
   @override
   State<TypesScreen> createState() => _TypesScreenState();
-
 }
 
-class _TypesScreenState extends State <TypesScreen>{
+class _TypesScreenState extends State<TypesScreen> {
   List<Types>? types;
   bool isLoading = true;
 
@@ -19,14 +18,15 @@ class _TypesScreenState extends State <TypesScreen>{
     super.initState();
     fetchTypes();
   }
+
   void fetchTypes() async {
-    try{
+    try {
       final result = await ApiService.fetchTypes();
-      setState((){
+      setState(() {
         types = result;
         isLoading = false;
       });
-    } catch (e){
+    } catch (e) {
       setState(() {
         types = [];
         isLoading = false;
@@ -37,53 +37,52 @@ class _TypesScreenState extends State <TypesScreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-         appBar: AppBar(
+      appBar: AppBar(
         title: const Text(
           'Tipos de Pokemon',
           style: TextStyle(color: Colors.white, fontSize: 24),
         ),
         backgroundColor: AppColors.softBlack,
         centerTitle: true,
-    ),
-    body: isLoading ? const Center(child: CircularProgressIndicator()): 
-   ListView.builder(
-  itemCount: types!.length,
-  padding: const EdgeInsets.all(16),
-  itemBuilder: (context, i) {
-    final type = types![i];
-    return ExpansionTile(
-      title: Row(
-        children: [
-          // Ícone do tipo
-          Image.asset(
-            'assets/icons_type/${type.type}.png',
-            width: 24,
-            height: 24,
-          ),
-          const SizedBox(width: 8),
-          Text(
-            type.type.toUpperCase(),
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-            ),
-          ),
-        ],
       ),
-      children: [
-       Padding(
-              padding: const EdgeInsets.all(12),
-              child: Text(
-                'Causa dano duplo em: ${type.typeDamage}',
-                style: const TextStyle(fontSize: 14),
-              )
-              )
-      ],
-    );
-  },
-)
-
+      body: isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : ListView.builder(
+              itemCount: types!.length,
+              padding: const EdgeInsets.all(16),
+              itemBuilder: (context, i) {
+                final type = types![i];
+                return ExpansionTile(
+                  title: Row(
+                    children: [
+                      // Ícone do tipo
+                      Image.asset(
+                        'assets/icons_type/${type.type}.png',
+                        width: 24,
+                        height: 24,
+                      ),
+                      const SizedBox(width: 8),
+                      Text(
+                        type.type.toUpperCase(),
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ],
+                  ),
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Text(
+                        'Causa dano duplo em: ${type.typeDamage}',
+                        style: const TextStyle(fontSize: 14),
+                      ),
+                    ),
+                  ],
+                );
+              },
+            ),
     );
   }
-
 }

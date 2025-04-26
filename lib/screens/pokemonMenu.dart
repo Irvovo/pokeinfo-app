@@ -23,7 +23,7 @@ class _PokemonMenuState extends State<PokemonMenu> {
 
   void fetchPokemon() async {
     try {
-      final result = await ApiService.fetchPokemon(10);
+      final result = await ApiService.fetchPokemon(40);
       setState(() {
         pokemons = result;
         isLoading = false;
@@ -86,7 +86,7 @@ class _PokemonMenuState extends State<PokemonMenu> {
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 4),
                               child: Image.asset(
-                                'assets/icons_type/$type.png', // ajuste a extensão conforme seu arquivo (.svg ou .png)
+                                'assets/icons_type/$type.png',
                                 width: 24,
                                 height: 24,
                               ),

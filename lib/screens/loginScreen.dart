@@ -135,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               const SizedBox(height: 8),
-              // Botão "Sobre"
+             
               TextButton(
                 onPressed: () {
                   Navigator.push(

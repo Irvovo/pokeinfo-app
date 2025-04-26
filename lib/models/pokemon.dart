@@ -1,5 +1,4 @@
-// lib/services/api_service.dart
-// lib/models/pokemon.dart
+
 class Pokemon {
   final String name;
   final String SpriteUrl;
