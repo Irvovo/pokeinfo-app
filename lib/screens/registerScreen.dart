@@ -26,7 +26,7 @@ body: Container(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         // Logotipo
-       Image.asset('assets/logo.png',
+       Image.asset('imagens/logo.png',
        width: 100,
        height: 100,),
 

@@ -8,14 +8,14 @@ class GameScreen extends StatelessWidget {
 
   Widget build(BuildContext context){
     final List<Map<String, String>> gamesInfo = [
-      {'image': 'assets/capa_jogos/1.jpg', 'name': 'Primeira Geração', 'year': '1996'},
-      {'image': 'assets/capa_jogos/2.jpg', 'name': 'Segunda Geração', 'year': '1999'},
-      {'image': 'assets/capa_jogos/3.jpg', 'name': 'Terceira Geração', 'year': '2002'},
-      {'image': 'assets/capa_jogos/4.jpg', 'name': 'Quarta Geração', 'year': '2006'},
-      {'image': 'assets/capa_jogos/5.jpg', 'name': 'Quinta Geração', 'year': '2010'},
-      {'image': 'assets/capa_jogos/6.jpg', 'name': 'Sexta Geração', 'year': '2013'},
-      {'image': 'assets/capa_jogos/7.jpg', 'name': 'Sétima Geração', 'year': '2016'},
-      {'image': 'assets/capa_jogos/8.jpg', 'name': 'Oitava Geração', 'year': '2019'},
+      {'image': 'imagens/capa_jogos/1.jpg', 'name': 'Primeira Geração', 'year': '1996'},
+      {'image': 'imagens/capa_jogos/2.jpg', 'name': 'Segunda Geração', 'year': '1999'},
+      {'image': 'imagens/capa_jogos/3.jpg', 'name': 'Terceira Geração', 'year': '2002'},
+      {'image': 'imagens/capa_jogos/4.jpg', 'name': 'Quarta Geração', 'year': '2006'},
+      {'image': 'imagens/capa_jogos/5.jpg', 'name': 'Quinta Geração', 'year': '2010'},
+      {'image': 'imagens/capa_jogos/6.jpg', 'name': 'Sexta Geração', 'year': '2013'},
+      {'image': 'imagens/capa_jogos/7.jpg', 'name': 'Sétima Geração', 'year': '2016'},
+      {'image': 'imagens/capa_jogos/8.jpg', 'name': 'Oitava Geração', 'year': '2019'},
 
     ];
     return Scaffold(

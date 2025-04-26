@@ -31,7 +31,7 @@ class _RecoverPasswordState extends State<RecoverPassword> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/logo.png',
+              'imagens/logo.png',
               width: 100,
               height: 100,
             ),

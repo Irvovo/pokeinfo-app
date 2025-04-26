@@ -20,8 +20,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    -  assets/
-    - assets/capa_jogos/
-    - assets/icons_type/
+    -  imagens/
+    - imagens/capa_jogos/
+    - imagens/icons_type/
 
   

@@ -57,7 +57,7 @@ class _TypesScreenState extends State<TypesScreen> {
                     children: [
                       // Ícone do tipo
                       Image.asset(
-                        'assets/icons_type/${type.type}.png',
+                        'imagens/icons_type/${type.type}.png',
                         width: 24,
                         height: 24,
                       ),

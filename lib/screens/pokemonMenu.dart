@@ -86,7 +86,7 @@ class _PokemonMenuState extends State<PokemonMenu> {
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 4),
                               child: Image.asset(
-                                'assets/icons_type/$type.png',
+                                'imagens/icons_type/$type.png',
                                 width: 24,
                                 height: 24,
                               ),
