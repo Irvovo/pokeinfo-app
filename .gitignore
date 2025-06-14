@@ -50,3 +50,4 @@ build/
 android/.gradle
 pubspec.lock
 *.iml
+.env
