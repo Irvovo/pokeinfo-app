@@ -12,6 +12,9 @@ dependencies:
   flutter_svg: ^2.0.7
   device_preview: ^1.2.0
   http: ^0.13.6
+  firebase_core: ^3.14.0
+  firebase_auth: ^5.6.0
+  cloud_firestore: ^5.6.9
 
 dev_dependencies:
   flutter_test:
@@ -20,8 +23,13 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/
     -  imagens/
     - imagens/capa_jogos/
     - imagens/icons_type/
+  fonts:
+    - family: NotoColorEmoji
+      fonts:
+        - asset: assets/fonts/NotoColorEmoji-Regular.ttf
 
   
