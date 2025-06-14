@@ -63,5 +63,15 @@ class ApiService {
     throw Exception('Erro ao carregar tipos de Pokémon');
   }
 }
+static Future<Pokemon> fetchPokemonByName(String name) async {
+    final response = await http.get(Uri.parse('https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}'));
+
+    if (response.statusCode == 200) {
+      var data = json.decode(response.body);
+      return Pokemon.fromJson(data);
+    } else {
+      throw Exception('Falha ao carregar dados do Pokémon');
+    }
+  }
 }
 

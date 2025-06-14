@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169461034439",
+    "project_id": "poke-info-app",
+    "storage_bucket": "poke-info-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169461034439:android:76bc3fe163e56e6876fde2",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2QrIFBm8Qg5emTEAy4t5YbkhoC_qJ358"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
